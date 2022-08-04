@@ -27,7 +27,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Donu BMI CALCULATOR'),
+          title: const Text('BMI CALCULATOR'),
           centerTitle: true,
           backgroundColor: kAppBarCustomColor,
         ),
