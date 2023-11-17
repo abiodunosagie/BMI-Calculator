@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:bmi_calculator/Screens/input_Page.dart';
+import 'package:flutter/material.dart';
 
-void main() => runApp(BMICalculator());
+void main() => runApp(const BMICalculator());
 
 const tabTitle = Colors.red;
 
@@ -12,12 +12,11 @@ class BMICalculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xff0a0e21),
-        scaffoldBackgroundColor: Color(0xff0a0e21),
+        primaryColor: const Color(0xff0a0e21),
+        scaffoldBackgroundColor: const Color(0xff0a0e21),
       ),
-
       debugShowCheckedModeBanner: false,
-        home: InputPage(),
+      home: const InputPage(),
     );
   }
 }

@@ -1,12 +1,12 @@
 👋 Hi, I’m @abiodunosagie
 👀 I’m interested in flutter application development
 🌱 I’m currently learning advance flutter
-💞️ I’m looking to collaborate on building flutter uis for anyone whos willing to pay. I'm also open to volunteering too.
+💞️ I’m looking to collaborate on building flutter uis for anyone who's willing to pay. I'm also open to volunteering too.
 📫 How to reach me is easy you can reach me on whatsapp at +2339077601790 or my twitter @smith_osagie3
 
 # bmi_calculator
 
-A flutter calcuator built for Android, IOS , and web
+A flutter calculator built for Android, IOS , and web
 
 ## Getting Started
 

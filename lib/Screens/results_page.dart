@@ -1,11 +1,12 @@
+import 'package:bmi_calculator/Component/buttom_botton.dart';
+import 'package:bmi_calculator/Component/reuseabel_card.dart';
 import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:bmi_calculator/Component/reuseabel_card.dart';
-import 'package:bmi_calculator/Component/buttom_botton.dart';
 
 class ResultsPage extends StatelessWidget {
-  ResultsPage(
-      {required this.bmiResult,
+  const ResultsPage(
+      {super.key,
+      required this.bmiResult,
       required this.interpretation,
       required this.resultText});
 
@@ -17,7 +18,7 @@ class ResultsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: const Text('BMI CALCULATOR'),
         backgroundColor: kAppBarCustomColor,
       ),
       body: Column(
@@ -26,7 +27,7 @@ class ResultsPage extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-              padding: EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(15.0),
               alignment: Alignment.center,
               child: const Center(
                   child: Text(
@@ -53,13 +54,11 @@ class ResultsPage extends StatelessWidget {
                   ],
                 ),
               )),
-          Container(
-            child: BottomButton(
-              buttonTitle: 'RE-CALCULATE',
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
+          BottomButton(
+            buttonTitle: 'RE-CALCULATE',
+            onTap: () {
+              Navigator.pop(context);
+            },
           )
         ],
       ),
